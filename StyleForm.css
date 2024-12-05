@@ -1,0 +1,140 @@
+:root {
+    --verde1:  #8ec048; /* PANTONE 368 UP */
+    --verde2:  #bfd241; /* PANTONE 382 UP */
+    --negro:  #000000; /* NEGRO */
+    --azul:  #1a72b9; /* PANTONE 3005 C */
+    --blanco: #ffff; /* PANTONE 3005 C */
+  }
+
+
+  /* Estilo general del cuerpo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Estilo del encabezado */
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:rgb(210, 200, 200);
+    color: var(--negro);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del logo */
+.header .logo img {
+    max-width: 300px; /* Cambia según el tamaño deseado */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo del texto de información */
+.header .info-texto {
+    flex: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.header .info-texto h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .info-texto p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: var(--negro);
+}
+/* Estilo para el contenedor del formulario */
+.formulario-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #272525;
+    /* background-image: url("assets/negro.jpg"); */
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh;
+}
+
+/* Estilo del formulario */
+.formulario {
+    width: 100%;
+    max-width: 500px;
+    background-color: #d4caca;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(26, 114, 185,0.4);
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del título del formulario */
+.formulario h2 {
+    text-align: center;
+    color: var(--azul);
+    margin-bottom: 20px;
+}
+
+/* Estilo de etiquetas */
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: (26, 114, 185, 1);
+}
+
+/* Estilo de entradas y áreas de texto */
+.formulario input[type="text"],
+.formulario input[type="date"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Opciones de sexo */
+.sexo-opciones label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+/* Estilo del checkbox */
+.checkbox {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #555;
+}
+
+/* Estilo del botón */
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--azul);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #05ba20;
+}
